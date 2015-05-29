@@ -23,13 +23,13 @@ body {
 	background-color: #fff;
 	position: relative;
   	top: 50%;
-  	-webkit-transform: translateY(50%);
-  	-ms-transform: translateY(50%);
-  	transform: translateY(50%);
   	margin: 0 auto;
   	width: 42%;
   	padding: 24px 48px;
   	opacity: .95;
+  	-webkit-transform: translateY(50%);
+  	-ms-transform: translateY(50%);
+  	transform: translateY(50%);
 }
 
 #main-header {
@@ -94,9 +94,9 @@ body {
     border-bottom: 70px solid transparent;
 }*/
 
-.reset {
+/*.reset {
 	background-image: url("img/refresh.png")
-}
+}*/
 
 #green {
 	background-color: #88ae60;
@@ -106,13 +106,13 @@ body {
 	height: 100%;
 }
 
-#patter img:hover {
+#pattern img:hover {
 	width: 75px;
 	height: 50px;
 }
 
 #triangles {
-
+	background-color: #fff;
 }
 
 /* FONTS */

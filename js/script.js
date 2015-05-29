@@ -1,10 +1,9 @@
 $(document).ready(function() {
 
 	/* CHANGING BACKGROUNDS */
-	var _default = "purple";
+	// var _default = "purple";
 	var green = "#88ae60";
 	var pattern = "#fac564";
-	var triangles = "red";
 
 	$(".reset").click(function() {
 		$("body").css({"background-image":"none", "background-color":"#fff"});
@@ -12,23 +11,23 @@ $(document).ready(function() {
 
 	$("#green").click(function() {
 		$("body").css({"background-image":"none", "background-color":green});
-		changeColor(green);
+		// changeColor(green);
 	})
 
 	$("#pattern").click(function() {
-		$("body").css("background-image":"url('img/food.png')", "background-color":pattern);
-		changeColor(pattern);
+		$("body").css({"background-image":"url('img/food.png')", "background-color":pattern});
+		// changeTextColor(pattern);
 	})
 
 	$("#triangles").click(function() {
-		$("body").css({"background-image":"none", "background-color":"#fff");
-		changeColor(triangles);
+		$("body").css({"background-image":"none", "background-color":"#fff"});
+		// changeTextColor(triangles);
 	})
 
-	changeColor = function(color) {
-		$("#main-header").css("color", color);
-		$(".button").css("color", color);
-	})
+	// function changeTextColor(color) {
+	// 	$("#main-header").css("color", color);
+	// 	$(".button").css("color", color);
+	// })
 
 	// $('div#someDiv span').filter(function() {
 	//     var match = 'rgb(0, 0, 0)';
