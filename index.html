@@ -1,37 +1,122 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Ying Luo</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	    <script src="js/script.js"></script>
-	</head>
-	<body>
-		<div class="background">
-		</div>
-    	<div class="main-container">
-	    	<div id="main-header">Site under construction</div>
-	    	<div id="main-text">Hi there! I'm Ying &mdash; full-time student, part-time fool.</div>
-	    	<div id = "main-text">This page is still a work in progress, though in the meantime you can get to know me by 
-	    		<a class="link" href="http://theluoser.tumblr.com" target="_blank">reading what I'm reading</a> or 
-	    		<a class="link" href="https://www.flickr.com/photos/122631883@N04/" target="_blank">following my photo adventures</a>.
-	    	</div>
-
-	    	<div class="icons">
-	    		<a class="button" id="b1" href="https://www.behance.net/yingtluo" target="_blank">e</a>
-	    		<a class="button" id="b2" href="https://github.com/yingtluo" target="_blank">z</a>
-	    		<a class="button" id="b1" href="https://www.linkedin.com/in/yingtluo" target="_blank">i</a>
-	    		<a class="button" id="b2" href="mailto:yingtluo@gmail.com?Subject=Hi%20Ying!" target="_top">m</a>
-	    	</div>
-	    </div>
-
-	    <div class="bg-change">
-	    	<div class="reset"></div>
-	    	<div class="bg" id="green"></div>
-	    	<div class="bg" id="pattern"><img src="img/food.png"></div>
-	    	<div class="bg" id="triangles"></div>
-	    </div>
-	</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Ying Luo</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ying Luo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Projects
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://drive.google.com/open?id=0B5hIq8p8NKBVQy1UVHZSOEROVkU" target="_blank">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:ying.t.luo@gmail.com">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+      <!-- Header -->
+      <header class="jumbotron my-4">
+        <h1 class="my-4">Hi there! <small>I'm Ying.</small></h1>
+        <p class="lead">I'm a data analyst at <a href="http://www.zaplabs.com">ZapLabs</a>, where I apply statistical theory and design concepts to figure out how to build better real estate tools. Previously, I was a data analyst intern at <a href="http://www.autodesk.com">Autodesk</a>.</p>
+        <p class="lead">I studied statistics and computer science at UC Berkeley, where I helped build web apps pro bono at <a href="http://www.calblueprint.org">Blueprint</a> and led a team of designers at <a href="http://www.innovativedesign.club">Innovative Design</a>. In particular, I'm interested in leveraging data to make digital products delightful and impactful.</p>
+      </header>
+      <hr>
+      <!-- Project One -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3><a href="#">Centralized Dashboard System</a></h3>
+          <h6>ZapLabs · Data Visualization · Fall 2017</h6>
+          <p>When I first joined, ZapLabs didn't yet have a centralized dashboard system or dashboard design standards. Dashboards were scattered on Tableau, where they were not only difficult to access but also to digest.</p>
+          <p>I set out to define dashboard standards and to code the MVP of a centralized dashboard system on our own web platform that would allow for more flexibility in our design.</p>
+          <p>
+            <div class="btn btn-primary">HTML</div>
+            <div class="btn btn-primary">CSS</div>
+            <div class="btn btn-primary">D3.js</div>
+            <div class="btn btn-primary">Python</div>
+            <div class="btn btn-primary">Amazon S3</div>
+            <div class="btn btn-primary">Google Analytics API</div>
+            <div class="btn btn-primary">Oracle API</div>
+          </p>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      <!-- Project Two -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3><a href="#">Book Recommender</a></h3>
+          <h6>For Fun · Data Science · Fall 2017</h6>
+          <p>Taking open-source Goodreads data, I used collaborative filtering to generate an item-to-item based recommendation system from users' book ratings.</p>
+          <p></p>
+          <p>
+            <div class="btn btn-primary">SQL</div>
+            <div class="btn btn-primary">R</div>
+            <div class="btn btn-primary">ggplot</div>
+          </p>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      <!-- Project Three -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="http://forte-staging.herokuapp.com">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="vendor/bootstrap/img/forte-tour.gif" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3><a href="http://forte-staging.herokuapp.com" target="_blank">Forte Academy Portal</a></h3>
+          <h6>Blueprint · Web Development · Spring 2017</h6> 
+          <p>Blueprint partnered with the nonprofit <a href="https://www.forteacademy.org/about">Forte Academy</a> to build an admin portal for them to register and match students with teachers by their needs, skills, and locations.</p>
+          <p>Forte has since rolled out our solution and has been using it as of Fall 2017. I worked on both back-end and front-end features, such as password resetting and the About page.</p>
+          <p>
+            <div class="btn btn-primary">HTML</div>
+            <div class="btn btn-primary">CSS</div>
+            <div class="btn btn-primary">React.js</div>
+            <div class="btn btn-primary">Ruby on Rails</div>
+          </p>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      <footer>
+        Made with coffee, love, and Bootstrap from San Francisco.
+      </footer>
+      <br>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
