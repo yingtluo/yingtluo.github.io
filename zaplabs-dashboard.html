@@ -13,7 +13,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Ying Luo</a>
+        <a class="navbar-brand" href="index.html">Ying Luo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,7 +25,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://drive.google.com/open?id=0B5hIq8p8NKBVQy1UVHZSOEROVkU" target="_blank">Resume</a>
+              <a class="nav-link" href="vendor/bootstrap/img/yingluo_resume.pdf" target="_blank">Resume</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="mailto:ying.t.luo@gmail.com">Contact</a>
@@ -35,11 +35,82 @@
       </div>
     </nav>
     <!-- Page Content -->
-    <hr>
-      <footer>
-        Made with coffee, love, and Bootstrap.
-      </footer>
-      <br>
+    <div class="container">
+      <header class="jumbotron my-4">
+        <h1 class="my-4">One dashboard system for the entire company.</h1>
+        <hr>
+        <h6>The Problem</h6>
+        <p>
+          When I arrived at ZapLabs, I was shocked by how convoluted our data infrastructure was and consequently how little people knew about their own data. Product managers sometimes wouldn't know the number of users on their product or the revenue it generated! My job was reduced to convincing people that data would aid their decision-making process.
+        </p>
+        <p>
+          <div class="row">
+            <div class="col-sm-12">
+              <img class="img-fluid" src="vendor/bootstrap/img/old_dashboards.png">
+            </div>
+          </div>
+          <small><i>Some members of the ZapLabs data team! The original dashboards can also be seen in the back, where the graphs were not only complex but also hard to read.</i></small>
+        <p>
+          Restructuring the entire data infrastructure was infeasible for one person, so I started simpler: <b>I wanted to create dashboards that were more accessible and understandable.</b> Before, we had a dozen dashboards scattered on Tableau that were available only to a few people and were hard to read from a TV screen. So, I sought out to build dashboards that made it easy for people to understand and gain value from their data.
+        </p>
+        <br><br>
+        <h6>The Process</h6>
+        <p>
+          I began by working with the lead PM to prioritize key metrics and brainstorm the best way to display them. We ultimately wanted to build a data product that would help people derive insights into product health and from there catalyze action.
+        </p>
+        <p>
+          <div class="row">
+            <div class="col-sm-6">
+              <img class="img-fluid" src="vendor/bootstrap/img/dashboard-sketch-1.png">
+            </div>
+            <div class="col-sm-6">
+              <img class="img-fluid" src="vendor/bootstrap/img/dashboard-sketch-2.png">
+            </div>
+          </div>
+          <small><i>Initial sketches for potential dashboards.</i></small>
+        </p>
+        <p>
+          By building a few dashboards in Tableau myself, I knew that I needed a platform that was not only accessible but also more flexible in engineering. For these reasons, I opted to build a new dashboard system as a web app in Javascript. Instead of building the web app completely from scratch, I found a library built on top of d3.js that came with pre-styled classes that allowed me to focus more on analytics rather than on web design. Development only took a few weeks. 
+        </p>
+        <p>
+          Lastly, after defining the framework, I needed to retrieve and wrangle data from our databases using various API's: Oracle, Google Analytics, and Amazon S3. In particular, I remember retrieving data stored in our S3 data warehouse was a challenge because there were so much data to read in.
+        </p>
+        <p>
+          <div class="icon-set center">
+            <img class="img-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/2000px-Oracle_logo.svg.png">
+            <img class="img-icon" src="http://www.shounakgupte.com/wp-content/uploads/2017/03/logo_lockup_analytics_icon_vertical_black_2x.png">
+            <img class="img-icon" src="http://s3.amazonaws.com/airsquare.com/asset/library/image/blog/amazon-web-services.png">
+          </div>
+        </p>
+        <br><br>
+        <h6>The Final Product</h6>
+        <p>
+          Some goals that we had set and fulfilled for our dashboard product included:
+          <ul>
+            <li><b>Accessible:</b> Everyone could view these dashboards on their own laptops via a URL. No login required.</li>
+            <li><b>Secure:</b> To ensure that our data is still protected, we set up the system so that it was only accessible within the company's network.</li>
+            <li><b>Understandable:</b> The metrics should be defined and displayed so clearly that people can simply look up from their desks to check their stats in real-time.</li>
+          </ul>
+        </p>
+        <p> 
+          <img class="img-fluid" src="vendor/bootstrap/img/epics-dashboard.png">
+          <small><i>This dashboard tracks one key metric for each product team and now serves as a company-wide health gauging tool. It is populated with fake data for privacy reasons.</i></small>
+        </p>
+        <br><br>
+        <h6>Impact</h6>
+          We have been slowly rolling out the dashboard app to product managers and continuing to add dashboards on the platform. We prioritize which dashboards get built first based on technical feasbility and business importance. More specifically, 
+        <br><br>
+        <h6>Key Takeaways</h6>
+        <ul>
+          <li>Oftentimes, taking the time to build your own custom framework is not worth the effort. In my case, we couldn't use an existing dashboard because of our security requirements, but I did find a pre-built library C3.js that modularized much of the 
+          <li>
+        </ul>
+      </header>
+      <hr>
+        <footer>
+          <small>Made with coffee, love, and Bootstrap.</small>
+        </footer>
+        <br>
     </div>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
